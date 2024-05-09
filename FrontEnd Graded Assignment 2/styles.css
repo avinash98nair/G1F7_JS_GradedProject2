@@ -1,0 +1,141 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+     'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    padding: 0 0 50px 0;
+    margin: 0;
+}
+.button-and-input{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}
+button{
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input{
+    height: 35px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.resume-container{
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.name-container{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: lightblue;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+}
+.left-side{
+    width: 200px;
+    padding: 10px;
+}
+.quick-info{
+    background-color: pink;
+    padding: 10px;
+}
+.quick-info-item{
+    display: flex;
+    flex-direction: column;
+}
+.quick-info-item  p{
+    text-align: right;
+    margin: 5px 0px;
+    word-wrap: break-word;
+}
+.quick-info-item > ul{
+    padding: 0;
+    text-align: right;
+    list-style-type: none;
+}
+.quick-info-item  li{
+    margin: 5px 0px;
+}
+.head{
+    background-color: grey;
+}
+.right-side{
+    padding: 10px;
+}
+.work-experience li, .project li {
+    list-style-type: none;
+}
+.right-side li{
+    margin: 10px 0px;
+}
+.right-side ul{
+  padding-left: 30px;
+}
+
+@media screen and (max-width: 875px){
+    .details{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+        padding: 0px;
+    }
+    .quick-info{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 10px;;
+    }
+}
+
+.previous.invisible{
+    visibility: hidden;
+}
+.next.invisible{
+    visibility: hidden;
+}
+
+.error{
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 56px;
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.resume-container.empty-list{
+    margin-top: 130px;
+}
+.error-message{
+    height: auto;
+}
